@@ -1,0 +1,47 @@
+name: render-skit
+
+# Rendering happens ONLY here (GitHub Actions) - never on a developer machine.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: render-skit
+  cancel-in-progress: true
+
+jobs:
+  luanti:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      OUT: ${{ github.workspace }}/out
+      RAW: /tmp/raw.mkv
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install packages, Luanti (ppa:minetestdevs/stable, >= 5.10) and VoxeLibre
+        run: bash scripts/01_install.sh
+
+      - name: Prepare world (map_meta.txt ends with [end_of_params]) and lint Lua
+        run: bash scripts/02_prepare_world.sh
+
+      - name: Render skit (Xvfb 720x1280 + openbox + Luanti + ffmpeg x11grab)
+        run: bash scripts/03_render.sh
+
+      - name: Cut 10.9 s after the marker, build mp4 / gif / stills
+        run: bash scripts/04_postprocess.sh
+
+      - name: Upload artifact (mp4 / gif / stills / logs)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vidcrit-skit
+          path: |
+            out/skit.mp4
+            out/skit.gif
+            out/summary.md
+            out/stills/
+            out/logs/
+          if-no-files-found: warn
+          retention-days: 14

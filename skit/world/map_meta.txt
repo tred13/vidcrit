@@ -1,0 +1,6 @@
+mg_name = flat
+seed = 771234
+chunksize = 5
+mgflat_ground_level = 8
+mcl_superflat_classic = true
+[end_of_params]
