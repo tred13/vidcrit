@@ -1,0 +1,9 @@
+mg_name = flat
+seed = 20250613
+water_level = 1
+chunksize = 5
+mg_flags = nocaves,nodungeons,light,nodecorations
+mgflat_spflags = nolakes,nohills
+mgflat_ground_level = 8
+mcl_superflat_classic = true
+[end_of_params]
