@@ -1,0 +1,39 @@
+name: render-skit
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  luanti:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint Lua (luac5.1 -p)
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y lua5.1
+          find mod -name '*.lua' -print0 | xargs -0 -n1 luac5.1 -p
+
+      - name: Install Luanti (>= 5.10) and tooling
+        run: bash scripts/setup.sh
+
+      - name: Install VoxeLibre 0.92.4, world and mod
+        run: bash scripts/install_game.sh
+
+      - name: Render skit (Xvfb :99 720x1280 + openbox + ffmpeg)
+        run: bash scripts/run_skit.sh
+
+      - name: Verify acceptance criteria
+        run: bash scripts/verify.sh
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: skit-render
+          path: out/
+          if-no-files-found: warn
+          retention-days: 14
