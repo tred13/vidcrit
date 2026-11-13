@@ -3,7 +3,8 @@ local C = skit.cfg
 local F = {}
 
 local TEX_FLAME = "mcl_particles_flame.png"
-local TEX_SMOKE = "mcl_particles_smoke.png"
+local TEX_SMOKE  = "[fill:2x2:#8d8d8d"   -- blocky grey puffs (the stock smoke texture is a huge ring)
+local TEX_SMOKE2 = "[fill:2x2:#3c3c3c"
 local TEX_FLASH = "[fill:2x2:#fff3c4"
 local TEX_WOOD  = "default_wood.png"
 
@@ -25,7 +26,7 @@ function F.fuse(pos, duration)
     minpos = top, maxpos = v(top.x, top.y + 0.1, top.z),
     minvel = v(-0.3, 0.6, -0.3), maxvel = v(0.3, 1.2, 0.3),
     minexptime = 0.6, maxexptime = 1.3,
-    minsize = 0.8, maxsize = 1.6,
+    minsize = 0.25, maxsize = 0.5,
     texture = TEX_SMOKE,
   })
 end
@@ -36,7 +37,7 @@ function F.poof(pos)
     minpos = v(pos.x - 0.5, pos.y - 0.45, pos.z - 0.5), maxpos = v(pos.x + 0.5, pos.y - 0.3, pos.z + 0.5),
     minvel = v(-1.2, 0.2, -1.2), maxvel = v(1.2, 1.0, 1.2),
     minexptime = 0.4, maxexptime = 0.9,
-    minsize = 1.2, maxsize = 2.2,
+    minsize = 0.5, maxsize = 1.0,
     texture = TEX_SMOKE,
   })
 end
@@ -65,16 +66,18 @@ function F.boom(pos)
     minsize = 2.2, maxsize = 4.6,
     texture = TEX_FLAME, glow = 14,
   })
-  -- lingering smoke
-  core.add_particlespawner({
-    amount = 70, time = 0.6,
-    minpos = v(pos.x - 0.6, pos.y - 0.2, pos.z - 0.6), maxpos = v(pos.x + 0.6, pos.y + 0.6, pos.z + 0.6),
-    minvel = v(-2.2, 0.4, -2.2), maxvel = v(2.2, 3.4, 2.2),
-    minacc = v(0, 0.3, 0), maxacc = v(0, 0.6, 0),
-    minexptime = 1.2, maxexptime = 2.8,
-    minsize = 3.0, maxsize = 6.0,
-    texture = TEX_SMOKE,
-  })
+  -- lingering smoke: blocky grey + dark puffs (kept small so the actors stay readable)
+  for i, tex in ipairs({ TEX_SMOKE, TEX_SMOKE2 }) do
+    core.add_particlespawner({
+      amount = 34, time = 0.6,
+      minpos = v(pos.x - 0.6, pos.y - 0.2, pos.z - 0.6), maxpos = v(pos.x + 0.6, pos.y + 0.6, pos.z + 0.6),
+      minvel = v(-2.0, 0.4, -2.0), maxvel = v(2.0, 3.0, 2.0),
+      minacc = v(0, 0.3, 0), maxacc = v(0, 0.6, 0),
+      minexptime = 1.0, maxexptime = 2.4,
+      minsize = 0.6 + 0.1 * i, maxsize = 1.5,
+      texture = tex,
+    })
+  end
   -- splinters of the "set" flying around (stage itself stays intact)
   core.add_particlespawner({
     amount = 26, time = 0.08,

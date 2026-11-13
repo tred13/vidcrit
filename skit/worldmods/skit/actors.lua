@@ -5,6 +5,7 @@ local A  = {}
 
 local PI = math.pi
 local sin, cos, exp, abs = math.sin, math.cos, math.exp, math.abs
+local atan2 = math.atan2 or function(y, x) return math.atan(y, x) end
 
 local function clamp(x, lo, hi) return math.max(lo, math.min(hi, x)) end
 local function smooth(k) k = clamp(k, 0, 1); return k * k * (3 - 2 * k) end
@@ -20,7 +21,7 @@ local function villager_pre(t)
   if t >= C.T_NOTICE then                              -- notices the TNT, turns towards it
     local from = PI + 0.22 * sin(C.T_NOTICE * 1.7)
     local k = smooth((t - C.T_NOTICE) / 0.6)
-    yaw = from + (PI + PI / 4 - from) * k
+    yaw = from + (PI + 0.7 - from) * k
   end
   if t > C.T_PANIC then                                -- trembling
     local a = clamp((t - C.T_PANIC) / 1.2, 0, 1)
@@ -46,16 +47,17 @@ local function villager_pose(t)
   return x, y, yaw
 end
 
--- Chicken (stands at x = +AX, faces the villager = -X = yaw PI/2).
+-- Chicken (stands at x = +CX, faces the villager = -X = yaw PI/2, later looks back at the TNT).
+local WATCH = atan2(-(C.TNT_X - C.CX), C.TNT_Z)
 local function chicken_pre(t)
   t = math.max(t, 0)
-  local x, y = C.AX, skit.YS
+  local x, y = C.CX, skit.YS
   local yaw = PI / 2 + 0.18 * sin(t * 2.1)
   if t >= 2.0 then                                     -- turns to camera and "lays" the TNT
     local from = PI / 2 + 0.18 * sin(2.0 * 2.1)
     yaw = from + (PI - from) * smooth((t - 2.0) / 0.4)
     if t >= 2.9 then                                   -- then watches it
-      yaw = PI + (PI / 2 - PI) * smooth((t - 2.9) / 0.5)
+      yaw = PI + (WATCH - PI) * smooth((t - 2.9) / 0.5)
     end
     if t >= 2.3 and t <= 2.6 then
       y = y + 0.12 * sin(PI * (t - 2.3) / 0.3)         -- little hop when it pops out
@@ -143,7 +145,7 @@ function A.spawn()
   local YS = skit.YS
   -- add_entity RETURNS AN ObjectRef (not the luaentity); get_luaentity() gives the table.
   local vobj = core.add_entity({ x = -C.AX, y = YS, z = 0 }, "mobs_mc:villager")
-  local cobj = core.add_entity({ x =  C.AX, y = YS, z = 0 }, "mobs_mc:chicken")
+  local cobj = core.add_entity({ x =  C.CX, y = YS, z = 0 }, "mobs_mc:chicken")
   if not vobj then error("skit: could not spawn mobs_mc:villager") end
   if not cobj then error("skit: could not spawn mobs_mc:chicken") end
   A.vobj, A.cobj = vobj, cobj
@@ -162,7 +164,7 @@ function A.spawn()
   skit.log(string.format("actors spawned: villager=%s chicken=%s", vobj:get_luaentity().name, cobj:get_luaentity().name))
 end
 
-local function tnt_pos() return { x = 0, y = skit.YS + C.TNT_Y, z = 0 } end
+local function tnt_pos() return { x = C.TNT_X, y = skit.YS + C.TNT_Y, z = C.TNT_Z } end
 
 local function spawn_tnt(t)
   local obj = core.add_entity(tnt_pos(), "mcl_tnt:tnt")
@@ -191,7 +193,7 @@ local function update_tnt(t)
     sc = 0.4 + 0.6 * smooth(u / 0.2)
   end
   local frac = clamp(u / (C.T_BOOM - C.T_TNT), 0, 1)
-  sc = sc * (1 + 0.10 * frac * frac * (0.5 + 0.5 * sin(t * 28)))
+  sc = sc * (1 + 0.04 * frac * frac * (0.5 + 0.5 * sin(t * 28)))
   A.tnt:set_pos(p)
   A.tnt:set_velocity(ZERO)
   A.tnt:set_properties({ visual_size = { x = sc, y = sc, z = sc } })
@@ -209,7 +211,7 @@ local function explode(t)
   skit.event("explosion", C.T_BOOM, t)
   if mcl_explosions and mcl_explosions.explode then
     local ok, err = pcall(mcl_explosions.explode, pos, C.STRENGTH,
-      { drop_chance = 0, fire = false, griefing = true })
+      { drop_chance = 0, fire = false, griefing = true, particles = false })
     skit.log(string.format("mcl_explosions.explode strength=%.2f ok=%s %s", C.STRENGTH, tostring(ok), ok and "" or tostring(err)))
   else
     skit.log("WARNING: mcl_explosions missing, only particles are shown")

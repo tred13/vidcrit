@@ -23,25 +23,28 @@ C.PRE_ROLL = 3.0   -- seconds between skit_ready and skit_t0 (ffmpeg start-up ro
 -- ----------------------------------------------------------------- layout
 -- Stage surface height is YS (computed at runtime from the terrain).
 C.STAGE_HALF = 2          -- 5x5 stage
-C.AX         = 0.85       -- actors stand at x = -AX (villager) / +AX (chicken)
+C.AX         = 0.95       -- villager stands at x = -AX
+C.CX         = 1.15       -- chicken stands at x = +CX
+C.TNT_X      = 0.30       -- TNT is "laid" behind the actors (no screen overlap)
+C.TNT_Z      = 1.20
 C.TNT_Y      = 0.5        -- TNT centre above stage surface
-C.VILLAGER_HEAD = 1.96    -- landing height (just above villager's head box)
+C.VILLAGER_HEAD = 1.84    -- landing height (top of the villager's head model)
 
 -- ------------------------------------------------------------------ camera
 -- Camera lives on the forward axis (x = 0, looking +Z) and ALWAYS looks at ONE
 -- point on that axis: (0, YS + TY, 0).
-C.TY      = 0.98
-C.FOV_Y   = 42            -- wanted rendered VERTICAL fov (degrees)
+C.TY      = 0.53
+C.FOV_Y   = 52            -- wanted rendered VERTICAL fov (degrees)
 C.ASPECT  = 720 / 1280
 -- d = distance in blocks (kept inside 6..7), h = camera height above stage surface
 C.KEYS = {
-  { t =  0.0, d = 6.90, h = 2.10 },
-  { t =  2.0, d = 6.80, h = 1.95 },
-  { t =  4.8, d = 6.55, h = 1.75 },
-  { t =  5.4, d = 6.50, h = 1.72 },
-  { t =  6.6, d = 6.40, h = 1.70 },
-  { t =  8.6, d = 6.32, h = 1.62 },
-  { t = 10.9, d = 6.30, h = 1.55 },
+  { t =  0.0, d = 6.95, h = 2.10 },
+  { t =  2.0, d = 6.90, h = 1.95 },
+  { t =  4.8, d = 6.82, h = 1.80 },
+  { t =  5.4, d = 6.80, h = 1.76 },
+  { t =  6.6, d = 6.75, h = 1.72 },
+  { t =  8.6, d = 6.70, h = 1.64 },
+  { t = 10.9, d = 6.70, h = 1.58 },
 }
 
 -- ----------------------------------------------------------- chicken flight

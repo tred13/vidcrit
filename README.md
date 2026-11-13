@@ -27,8 +27,8 @@ Artifact `vidcrit-skit`: `skit.mp4`, `skit.gif`, `stills/`, `logs/` (+ `summary.
   (hard cap 2.5 asserted in `cfg.lua`); then the chicken is launched and lands on the villager's head.
 * Camera: keyframes on the forward axis, **one** look-at point on that axis. The yaw/pitch convention of
   `set_look_*` is **measured once** (`get_look_dir`) and cached; it is never repeated per frame.
-  Distance 6.3–6.9 blocks, actors within ±1.2 blocks of the axis, villager head in the upper third,
-  stage floor at the bottom. Vertical FOV 42° (Luanti multiplies the `fov` by 1.4 on narrow windows).
+  Distance 6.7–6.95 blocks, actors within ±1.2 blocks of the axis, villager head in the upper third,
+  stage floor at the bottom. Vertical FOV 52° (Luanti multiplies the `fov` by 1.4 on narrow windows).
 * No HUD: `hud_set_flags` + removal of every element returned by `hud_get_all()` (no `pcall` in that loop).
 * Events are logged to `skit_events.log` with actual vs expected time (tolerance ±0.2 s).
 
