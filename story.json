@@ -95,9 +95,9 @@
       "keep": true,
       "view": { "lon": 12, "lat": 22, "span": 105 },
       "events": [
-        { "t": "sticker", "at": "lying", "emoji": "1f925", "x": 0.82, "y": 0.17, "size": 240, "rot": 10 },
-        { "t": "stat", "at": "fourteen", "to": 14, "format": "int", "suffix": "x", "text": "", "sub": "BIGGER THAN GREENLAND", "x": 0.5, "y": 0.6, "size": 260, "rot": -3 },
-        { "t": "sticker", "at": "bigger", "emoji": "1f92f", "x": 0.2, "y": 0.17, "size": 240, "rot": -10 },
+        { "t": "sticker", "at": "lying", "emoji": "1f925", "x": 0.82, "y": 0.09, "size": 240, "rot": 10 },
+        { "t": "stat", "at": "fourteen", "to": 14, "format": "int", "suffix": "x", "text": "", "sub": "BIGGER THAN GREENLAND", "x": 0.5, "y": 0.27, "size": 230, "rot": -3 },
+        { "t": "sticker", "at": "bigger", "emoji": "1f92f", "x": 0.2, "y": 0.09, "size": 240, "rot": -10 },
         { "t": "shake", "at": "fourteen" }
       ],
       "sfx": [
@@ -254,7 +254,7 @@
       "events": [
         { "t": "hl", "at": 0, "ids": ["Greenland"], "color": "#1e3a8a" },
         { "t": "sticker", "at": "greenlands", "emoji": "1f1ec-1f1f1", "x": 0.2, "y": 0.16, "size": 230, "rot": -8 },
-        { "t": "stat", "at": "we", "text": "NOT FOR\nSALE", "sub": "", "x": 0.5, "y": 0.58, "size": 190, "rot": -7, "style": "stamp" },
+        { "t": "stat", "at": "we", "text": "NOT FOR\nSALE", "sub": "", "x": 0.5, "y": 0.58, "size": 150, "rot": -7, "style": "stamp" },
         { "t": "shake", "at": "we" }
       ],
       "sfx": [
