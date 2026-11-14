@@ -1,0 +1,2392 @@
+{
+ "fps": 30,
+ "total": 62.78,
+ "voiceEnd": 58.58,
+ "channel": "VIDCRIT",
+ "credits": [
+  [
+   "VOICE",
+   "AI-generated: Chatterbox by Resemble AI (MIT)"
+  ],
+  [
+   "MUSIC",
+   "\"Epical Drums 04\" via Mixkit (Mixkit Free License)"
+  ],
+  [
+   "SOUND EFFECTS",
+   "Mixkit (Mixkit Free License)"
+  ],
+  [
+   "EMOJI ARTWORK",
+   "Twemoji, Copyright Twitter, Inc. and contributors, CC-BY 4.0"
+  ],
+  [
+   "MAP DATA",
+   "Natural Earth (public domain)"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "text": "Why does everybody suddenly want *Greenland*?",
+   "mode": "globe",
+   "view": {
+    "lon": -42,
+    "lat": 66,
+    "r": 560,
+    "from": {
+     "lon": -125,
+     "lat": 15,
+     "r": 330
+    }
+   },
+   "keep": false,
+   "start": 0.0,
+   "end": 2.11,
+   "words": [
+    {
+     "w": "Why",
+     "emph": false,
+     "start": 0.0,
+     "end": 0.34
+    },
+    {
+     "w": "does",
+     "emph": false,
+     "start": 0.34,
+     "end": 0.68
+    },
+    {
+     "w": "everybody",
+     "emph": false,
+     "start": 0.68,
+     "end": 1.02
+    },
+    {
+     "w": "suddenly",
+     "emph": false,
+     "start": 1.02,
+     "end": 1.36
+    },
+    {
+     "w": "want",
+     "emph": false,
+     "start": 1.36,
+     "end": 1.7
+    },
+    {
+     "w": "Greenland?",
+     "emph": true,
+     "start": 1.7,
+     "end": 2.04
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": "Greenland",
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#ef4444",
+     "label": "GREENLAND",
+     "time": 1.64,
+     "end": 2.11
+    },
+    {
+     "t": "sticker",
+     "at": "everybody",
+     "emoji": "1f440",
+     "x": 0.8,
+     "y": 0.17,
+     "size": 250,
+     "rot": 10,
+     "time": 0.62,
+     "end": 2.11
+    },
+    {
+     "t": "flash",
+     "at": "Greenland",
+     "time": 1.64,
+     "end": 2.11
+    },
+    {
+     "t": "shake",
+     "at": "Greenland",
+     "time": 1.64,
+     "end": 2.11
+    }
+   ],
+   "sfx": [
+    {
+     "time": 0.0,
+     "s": "zoomimpact",
+     "v": 0.9
+    },
+    {
+     "time": 0.62,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 1.64,
+     "s": "impact",
+     "v": 0.8
+    }
+   ]
+  },
+  {
+   "id": "biggest",
+   "text": "It's the *biggest island* on Earth.",
+   "mode": "map",
+   "view": {
+    "lon": -42,
+    "lat": 72,
+    "span": 85
+   },
+   "keep": false,
+   "start": 2.11,
+   "end": 4.22,
+   "words": [
+    {
+     "w": "It's",
+     "emph": false,
+     "start": 2.11,
+     "end": 2.45
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 2.45,
+     "end": 2.79
+    },
+    {
+     "w": "biggest",
+     "emph": true,
+     "start": 2.79,
+     "end": 3.13
+    },
+    {
+     "w": "island",
+     "emph": true,
+     "start": 3.13,
+     "end": 3.47
+    },
+    {
+     "w": "on",
+     "emph": false,
+     "start": 3.47,
+     "end": 3.81
+    },
+    {
+     "w": "Earth.",
+     "emph": false,
+     "start": 3.81,
+     "end": 4.15
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": 0,
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#1e3a8a",
+     "label": "GREENLAND",
+     "time": 2.11,
+     "end": 10.14
+    },
+    {
+     "t": "stat",
+     "at": "biggest",
+     "to": 836000,
+     "format": "comma",
+     "text": "",
+     "sub": "SQUARE MILES",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 190,
+     "rot": -3,
+     "time": 2.73,
+     "end": 4.22
+    },
+    {
+     "t": "sticker",
+     "at": "island",
+     "emoji": "1f3dd",
+     "x": 0.82,
+     "y": 0.17,
+     "size": 240,
+     "rot": 8,
+     "time": 3.07,
+     "end": 4.22
+    }
+   ],
+   "sfx": [
+    {
+     "time": 2.73,
+     "s": "reveal",
+     "v": 0.7
+    },
+    {
+     "time": 3.07,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 2.03,
+     "s": "zoom",
+     "v": 0.55
+    }
+   ]
+  },
+  {
+   "id": "people",
+   "text": "But only *fifty-six thousand* people live there.",
+   "mode": "map",
+   "view": {
+    "lon": -42,
+    "lat": 72,
+    "span": 62
+   },
+   "keep": true,
+   "start": 4.22,
+   "end": 6.67,
+   "words": [
+    {
+     "w": "But",
+     "emph": false,
+     "start": 4.22,
+     "end": 4.56
+    },
+    {
+     "w": "only",
+     "emph": false,
+     "start": 4.56,
+     "end": 4.9
+    },
+    {
+     "w": "fifty-six",
+     "emph": true,
+     "start": 4.9,
+     "end": 5.24
+    },
+    {
+     "w": "thousand",
+     "emph": true,
+     "start": 5.24,
+     "end": 5.58
+    },
+    {
+     "w": "people",
+     "emph": false,
+     "start": 5.58,
+     "end": 5.92
+    },
+    {
+     "w": "live",
+     "emph": false,
+     "start": 5.92,
+     "end": 6.26
+    },
+    {
+     "w": "there.",
+     "emph": false,
+     "start": 6.26,
+     "end": 6.6
+    }
+   ],
+   "events": [
+    {
+     "t": "stat",
+     "at": "fiftysix",
+     "to": 56000,
+     "format": "comma",
+     "text": "",
+     "sub": "PEOPLE",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 200,
+     "rot": 3,
+     "time": 4.84,
+     "end": 6.67
+    },
+    {
+     "t": "sticker",
+     "at": "live",
+     "emoji": "1f976",
+     "x": 0.2,
+     "y": 0.17,
+     "size": 240,
+     "rot": -8,
+     "time": 5.86,
+     "end": 6.67
+    }
+   ],
+   "sfx": [
+    {
+     "time": 4.84,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 5.86,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 4.14,
+     "s": "whoosh3",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "ice",
+   "text": "Why? Because *eighty percent* of it is buried under *ice*.",
+   "mode": "map",
+   "view": {
+    "lon": -40,
+    "lat": 72,
+    "span": 48
+   },
+   "keep": true,
+   "start": 6.67,
+   "end": 10.14,
+   "words": [
+    {
+     "w": "Why?",
+     "emph": false,
+     "start": 6.67,
+     "end": 7.01
+    },
+    {
+     "w": "Because",
+     "emph": false,
+     "start": 7.01,
+     "end": 7.35
+    },
+    {
+     "w": "eighty",
+     "emph": true,
+     "start": 7.35,
+     "end": 7.69
+    },
+    {
+     "w": "percent",
+     "emph": true,
+     "start": 7.69,
+     "end": 8.03
+    },
+    {
+     "w": "of",
+     "emph": false,
+     "start": 8.03,
+     "end": 8.37
+    },
+    {
+     "w": "it",
+     "emph": false,
+     "start": 8.37,
+     "end": 8.71
+    },
+    {
+     "w": "is",
+     "emph": false,
+     "start": 8.71,
+     "end": 9.05
+    },
+    {
+     "w": "buried",
+     "emph": false,
+     "start": 9.05,
+     "end": 9.39
+    },
+    {
+     "w": "under",
+     "emph": false,
+     "start": 9.39,
+     "end": 9.73
+    },
+    {
+     "w": "ice.",
+     "emph": true,
+     "start": 9.73,
+     "end": 10.07
+    }
+   ],
+   "events": [
+    {
+     "t": "stat",
+     "at": "eighty",
+     "to": 80,
+     "format": "int",
+     "suffix": "%",
+     "text": "",
+     "sub": "COVERED IN ICE",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 240,
+     "rot": -3,
+     "time": 7.29,
+     "end": 10.14
+    },
+    {
+     "t": "sticker",
+     "at": "ice",
+     "emoji": "1f9ca",
+     "x": 0.8,
+     "y": 0.17,
+     "size": 240,
+     "rot": 10,
+     "time": 9.67,
+     "end": 10.14
+    }
+   ],
+   "sfx": [
+    {
+     "time": 7.29,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 9.67,
+     "s": "ping",
+     "v": 0.7
+    },
+    {
+     "time": 6.59,
+     "s": "whoosh1",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "africa",
+   "text": "And no, it's *not* as big as *Africa*.",
+   "mode": "map",
+   "view": {
+    "lon": -8,
+    "lat": 40,
+    "span": 135
+   },
+   "keep": false,
+   "start": 10.14,
+   "end": 12.93,
+   "words": [
+    {
+     "w": "And",
+     "emph": false,
+     "start": 10.14,
+     "end": 10.48
+    },
+    {
+     "w": "no,",
+     "emph": false,
+     "start": 10.48,
+     "end": 10.82
+    },
+    {
+     "w": "it's",
+     "emph": false,
+     "start": 10.82,
+     "end": 11.16
+    },
+    {
+     "w": "not",
+     "emph": true,
+     "start": 11.16,
+     "end": 11.5
+    },
+    {
+     "w": "as",
+     "emph": false,
+     "start": 11.5,
+     "end": 11.84
+    },
+    {
+     "w": "big",
+     "emph": false,
+     "start": 11.84,
+     "end": 12.18
+    },
+    {
+     "w": "as",
+     "emph": false,
+     "start": 12.18,
+     "end": 12.52
+    },
+    {
+     "w": "Africa.",
+     "emph": true,
+     "start": 12.52,
+     "end": 12.86
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": 0,
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#1e3a8a",
+     "time": 10.14,
+     "end": 17.42
+    },
+    {
+     "t": "ghost",
+     "at": "not",
+     "country": "Greenland",
+     "from": [
+      -41.8,
+      73.1
+     ],
+     "to": [
+      22,
+      3
+     ],
+     "dur": 1.5,
+     "color": "#ef4444",
+     "time": 11.1,
+     "end": 17.42
+    },
+    {
+     "t": "hl",
+     "at": "Africa",
+     "group": "africa",
+     "color": "#fb923c",
+     "label": "AFRICA",
+     "labelAt": [
+      20,
+      8
+     ],
+     "time": 12.46,
+     "end": 17.42
+    }
+   ],
+   "sfx": [
+    {
+     "time": 11.1,
+     "s": "whoosh2",
+     "v": 0.7
+    },
+    {
+     "time": 12.46,
+     "s": "pop2",
+     "v": 0.9
+    },
+    {
+     "time": 10.06,
+     "s": "whoosh2",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "mercator",
+   "text": "That's just the *Mercator* map lying to you. Africa is *fourteen times* bigger.",
+   "mode": "map",
+   "view": {
+    "lon": 12,
+    "lat": 22,
+    "span": 105
+   },
+   "keep": true,
+   "start": 12.93,
+   "end": 17.42,
+   "words": [
+    {
+     "w": "That's",
+     "emph": false,
+     "start": 12.93,
+     "end": 13.27
+    },
+    {
+     "w": "just",
+     "emph": false,
+     "start": 13.27,
+     "end": 13.61
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 13.61,
+     "end": 13.95
+    },
+    {
+     "w": "Mercator",
+     "emph": true,
+     "start": 13.95,
+     "end": 14.29
+    },
+    {
+     "w": "map",
+     "emph": false,
+     "start": 14.29,
+     "end": 14.63
+    },
+    {
+     "w": "lying",
+     "emph": false,
+     "start": 14.63,
+     "end": 14.97
+    },
+    {
+     "w": "to",
+     "emph": false,
+     "start": 14.97,
+     "end": 15.31
+    },
+    {
+     "w": "you.",
+     "emph": false,
+     "start": 15.31,
+     "end": 15.65
+    },
+    {
+     "w": "Africa",
+     "emph": false,
+     "start": 15.65,
+     "end": 15.99
+    },
+    {
+     "w": "is",
+     "emph": false,
+     "start": 15.99,
+     "end": 16.33
+    },
+    {
+     "w": "fourteen",
+     "emph": true,
+     "start": 16.33,
+     "end": 16.67
+    },
+    {
+     "w": "times",
+     "emph": true,
+     "start": 16.67,
+     "end": 17.01
+    },
+    {
+     "w": "bigger.",
+     "emph": false,
+     "start": 17.01,
+     "end": 17.35
+    }
+   ],
+   "events": [
+    {
+     "t": "sticker",
+     "at": "lying",
+     "emoji": "1f925",
+     "x": 0.82,
+     "y": 0.17,
+     "size": 240,
+     "rot": 10,
+     "time": 14.57,
+     "end": 17.42
+    },
+    {
+     "t": "stat",
+     "at": "fourteen",
+     "to": 14,
+     "format": "int",
+     "suffix": "x",
+     "text": "",
+     "sub": "BIGGER THAN GREENLAND",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 260,
+     "rot": -3,
+     "time": 16.27,
+     "end": 17.42
+    },
+    {
+     "t": "sticker",
+     "at": "bigger",
+     "emoji": "1f92f",
+     "x": 0.2,
+     "y": 0.17,
+     "size": 240,
+     "rot": -10,
+     "time": 16.95,
+     "end": 17.42
+    },
+    {
+     "t": "shake",
+     "at": "fourteen",
+     "time": 16.27,
+     "end": 17.42
+    }
+   ],
+   "sfx": [
+    {
+     "time": 13.89,
+     "s": "pop1",
+     "v": 0.7
+    },
+    {
+     "time": 14.57,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 16.27,
+     "s": "success",
+     "v": 0.7
+    },
+    {
+     "time": 16.27,
+     "s": "impact",
+     "v": 0.6
+    },
+    {
+     "time": 12.85,
+     "s": "whoosh3",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "top",
+   "text": "So why the obsession? Look at the *top of the world*.",
+   "mode": "globe",
+   "view": {
+    "lon": -40,
+    "lat": 88,
+    "r": 520
+   },
+   "keep": false,
+   "start": 17.42,
+   "end": 21.23,
+   "words": [
+    {
+     "w": "So",
+     "emph": false,
+     "start": 17.42,
+     "end": 17.76
+    },
+    {
+     "w": "why",
+     "emph": false,
+     "start": 17.76,
+     "end": 18.1
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 18.1,
+     "end": 18.44
+    },
+    {
+     "w": "obsession?",
+     "emph": false,
+     "start": 18.44,
+     "end": 18.78
+    },
+    {
+     "w": "Look",
+     "emph": false,
+     "start": 18.78,
+     "end": 19.12
+    },
+    {
+     "w": "at",
+     "emph": false,
+     "start": 19.12,
+     "end": 19.46
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 19.46,
+     "end": 19.8
+    },
+    {
+     "w": "top",
+     "emph": true,
+     "start": 19.8,
+     "end": 20.14
+    },
+    {
+     "w": "of",
+     "emph": true,
+     "start": 20.14,
+     "end": 20.48
+    },
+    {
+     "w": "the",
+     "emph": true,
+     "start": 20.48,
+     "end": 20.82
+    },
+    {
+     "w": "world.",
+     "emph": true,
+     "start": 20.82,
+     "end": 21.16
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": "top",
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#facc15",
+     "time": 19.74,
+     "end": 27.15
+    },
+    {
+     "t": "sticker",
+     "at": "top",
+     "emoji": "1f9ed",
+     "x": 0.82,
+     "y": 0.17,
+     "size": 240,
+     "rot": 10,
+     "time": 19.74,
+     "end": 21.23
+    }
+   ],
+   "sfx": [
+    {
+     "time": 18.38,
+     "s": "pop1",
+     "v": 0.7
+    },
+    {
+     "time": 19.74,
+     "s": "reveal",
+     "v": 0.7
+    },
+    {
+     "time": 17.34,
+     "s": "zoom",
+     "v": 0.55
+    }
+   ]
+  },
+  {
+   "id": "between",
+   "text": "Greenland sits *right between* Russia and America.",
+   "mode": "globe",
+   "view": {
+    "lon": -40,
+    "lat": 82,
+    "r": 580
+   },
+   "keep": true,
+   "start": 21.23,
+   "end": 23.68,
+   "words": [
+    {
+     "w": "Greenland",
+     "emph": false,
+     "start": 21.23,
+     "end": 21.57
+    },
+    {
+     "w": "sits",
+     "emph": false,
+     "start": 21.57,
+     "end": 21.91
+    },
+    {
+     "w": "right",
+     "emph": true,
+     "start": 21.91,
+     "end": 22.25
+    },
+    {
+     "w": "between",
+     "emph": true,
+     "start": 22.25,
+     "end": 22.59
+    },
+    {
+     "w": "Russia",
+     "emph": false,
+     "start": 22.59,
+     "end": 22.93
+    },
+    {
+     "w": "and",
+     "emph": false,
+     "start": 22.93,
+     "end": 23.27
+    },
+    {
+     "w": "America.",
+     "emph": false,
+     "start": 23.27,
+     "end": 23.61
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": "Greenland",
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#facc15",
+     "label": "GREENLAND",
+     "time": 21.23,
+     "end": 27.15
+    },
+    {
+     "t": "hl",
+     "at": "Russia",
+     "ids": [
+      "Russia"
+     ],
+     "color": "#ef4444",
+     "label": "RUSSIA",
+     "time": 22.53,
+     "end": 27.15
+    },
+    {
+     "t": "hl",
+     "at": "America",
+     "ids": [
+      "United States of America"
+     ],
+     "color": "#3b82f6",
+     "label": "USA",
+     "time": 23.21,
+     "end": 27.15
+    },
+    {
+     "t": "sticker",
+     "at": "Russia",
+     "emoji": "1f1f7-1f1fa",
+     "x": 0.2,
+     "y": 0.17,
+     "size": 230,
+     "rot": -8,
+     "time": 22.53,
+     "end": 23.68
+    },
+    {
+     "t": "sticker",
+     "at": "America",
+     "emoji": "1f1fa-1f1f8",
+     "x": 0.8,
+     "y": 0.17,
+     "size": 230,
+     "rot": 8,
+     "time": 23.21,
+     "end": 23.68
+    }
+   ],
+   "sfx": [
+    {
+     "time": 21.23,
+     "s": "pop1",
+     "v": 0.7
+    },
+    {
+     "time": 22.53,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 23.21,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 21.15,
+     "s": "whoosh2",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "path",
+   "text": "The shortest path between them runs *straight across the Arctic*.",
+   "mode": "globe",
+   "view": {
+    "lon": -30,
+    "lat": 78,
+    "r": 600
+   },
+   "keep": true,
+   "start": 23.68,
+   "end": 27.15,
+   "words": [
+    {
+     "w": "The",
+     "emph": false,
+     "start": 23.68,
+     "end": 24.02
+    },
+    {
+     "w": "shortest",
+     "emph": false,
+     "start": 24.02,
+     "end": 24.36
+    },
+    {
+     "w": "path",
+     "emph": false,
+     "start": 24.36,
+     "end": 24.7
+    },
+    {
+     "w": "between",
+     "emph": false,
+     "start": 24.7,
+     "end": 25.04
+    },
+    {
+     "w": "them",
+     "emph": false,
+     "start": 25.04,
+     "end": 25.38
+    },
+    {
+     "w": "runs",
+     "emph": false,
+     "start": 25.38,
+     "end": 25.72
+    },
+    {
+     "w": "straight",
+     "emph": true,
+     "start": 25.72,
+     "end": 26.06
+    },
+    {
+     "w": "across",
+     "emph": true,
+     "start": 26.06,
+     "end": 26.4
+    },
+    {
+     "w": "the",
+     "emph": true,
+     "start": 26.4,
+     "end": 26.74
+    },
+    {
+     "w": "Arctic.",
+     "emph": true,
+     "start": 26.74,
+     "end": 27.08
+    }
+   ],
+   "events": [
+    {
+     "t": "arc",
+     "at": "shortest",
+     "pts": [
+      [
+       37.6,
+       55.75
+      ],
+      [
+       -87.6,
+       41.9
+      ]
+     ],
+     "dur": 2.4,
+     "color": "#ff3b30",
+     "time": 23.96,
+     "end": 27.15
+    },
+    {
+     "t": "sticker",
+     "at": "Arctic",
+     "emoji": "1f680",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 240,
+     "rot": 20,
+     "time": 26.68,
+     "end": 27.15
+    }
+   ],
+   "sfx": [
+    {
+     "time": 23.96,
+     "s": "whoosh3",
+     "v": 0.7
+    },
+    {
+     "time": 26.68,
+     "s": "impact",
+     "v": 0.7
+    },
+    {
+     "time": 23.6,
+     "s": "whoosh3",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "pituffik",
+   "text": "America already runs a *missile-warning base* there, called *Pituffik*.",
+   "mode": "globe",
+   "view": {
+    "lon": -60,
+    "lat": 74,
+    "r": 1500
+   },
+   "keep": false,
+   "start": 27.15,
+   "end": 30.28,
+   "words": [
+    {
+     "w": "America",
+     "emph": false,
+     "start": 27.15,
+     "end": 27.49
+    },
+    {
+     "w": "already",
+     "emph": false,
+     "start": 27.49,
+     "end": 27.83
+    },
+    {
+     "w": "runs",
+     "emph": false,
+     "start": 27.83,
+     "end": 28.17
+    },
+    {
+     "w": "a",
+     "emph": false,
+     "start": 28.17,
+     "end": 28.51
+    },
+    {
+     "w": "missile-warning",
+     "emph": true,
+     "start": 28.51,
+     "end": 28.85
+    },
+    {
+     "w": "base",
+     "emph": true,
+     "start": 28.85,
+     "end": 29.19
+    },
+    {
+     "w": "there,",
+     "emph": false,
+     "start": 29.19,
+     "end": 29.53
+    },
+    {
+     "w": "called",
+     "emph": false,
+     "start": 29.53,
+     "end": 29.87
+    },
+    {
+     "w": "Pituffik.",
+     "emph": true,
+     "start": 29.87,
+     "end": 30.21
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": 0,
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#1e3a8a",
+     "time": 27.15,
+     "end": 30.28
+    },
+    {
+     "t": "sticker",
+     "at": "missilewarning",
+     "emoji": "1f6f0",
+     "x": 0.2,
+     "y": 0.17,
+     "size": 240,
+     "rot": -10,
+     "time": 28.45,
+     "end": 30.28
+    },
+    {
+     "t": "pin",
+     "at": "Pituffik",
+     "lon": -68.7,
+     "lat": 76.53,
+     "label": "PITUFFIK SPACE BASE",
+     "time": 29.81,
+     "end": 30.28
+    },
+    {
+     "t": "flash",
+     "at": "Pituffik",
+     "time": 29.81,
+     "end": 30.28
+    }
+   ],
+   "sfx": [
+    {
+     "time": 28.45,
+     "s": "beep",
+     "v": 0.6
+    },
+    {
+     "time": 29.81,
+     "s": "pop2",
+     "v": 0.9
+    },
+    {
+     "time": 27.07,
+     "s": "whoosh1",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "minerals",
+   "text": "Beneath the surface? *Rare earth minerals*. The stuff inside *phones*, *electric cars*, and *fighter jets*.",
+   "mode": "map",
+   "view": {
+    "lon": -42,
+    "lat": 72,
+    "span": 52
+   },
+   "keep": false,
+   "start": 30.28,
+   "end": 35.45,
+   "words": [
+    {
+     "w": "Beneath",
+     "emph": false,
+     "start": 30.28,
+     "end": 30.62
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 30.62,
+     "end": 30.96
+    },
+    {
+     "w": "surface?",
+     "emph": false,
+     "start": 30.96,
+     "end": 31.3
+    },
+    {
+     "w": "Rare",
+     "emph": true,
+     "start": 31.3,
+     "end": 31.64
+    },
+    {
+     "w": "earth",
+     "emph": true,
+     "start": 31.64,
+     "end": 31.98
+    },
+    {
+     "w": "minerals.",
+     "emph": true,
+     "start": 31.98,
+     "end": 32.32
+    },
+    {
+     "w": "The",
+     "emph": false,
+     "start": 32.32,
+     "end": 32.66
+    },
+    {
+     "w": "stuff",
+     "emph": false,
+     "start": 32.66,
+     "end": 33.0
+    },
+    {
+     "w": "inside",
+     "emph": false,
+     "start": 33.0,
+     "end": 33.34
+    },
+    {
+     "w": "phones,",
+     "emph": true,
+     "start": 33.34,
+     "end": 33.68
+    },
+    {
+     "w": "electric",
+     "emph": true,
+     "start": 33.68,
+     "end": 34.02
+    },
+    {
+     "w": "cars,",
+     "emph": true,
+     "start": 34.02,
+     "end": 34.36
+    },
+    {
+     "w": "and",
+     "emph": false,
+     "start": 34.36,
+     "end": 34.7
+    },
+    {
+     "w": "fighter",
+     "emph": true,
+     "start": 34.7,
+     "end": 35.04
+    },
+    {
+     "w": "jets.",
+     "emph": true,
+     "start": 35.04,
+     "end": 35.38
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": 0,
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#1e3a8a",
+     "time": 30.28,
+     "end": 35.45
+    },
+    {
+     "t": "sticker",
+     "at": "minerals",
+     "emoji": "1f48e",
+     "x": 0.5,
+     "y": 0.3,
+     "size": 230,
+     "rot": 0,
+     "time": 31.92,
+     "end": 35.45
+    },
+    {
+     "t": "sticker",
+     "at": "phones",
+     "emoji": "1f4f1",
+     "x": 0.2,
+     "y": 0.15,
+     "size": 210,
+     "rot": -8,
+     "time": 33.28,
+     "end": 35.45
+    },
+    {
+     "t": "sticker",
+     "at": "cars",
+     "emoji": "1f697",
+     "x": 0.5,
+     "y": 0.12,
+     "size": 210,
+     "rot": 6,
+     "time": 33.96,
+     "end": 35.45
+    },
+    {
+     "t": "sticker",
+     "at": "jets",
+     "emoji": "2708",
+     "x": 0.8,
+     "y": 0.15,
+     "size": 210,
+     "rot": 12,
+     "time": 34.98,
+     "end": 35.45
+    }
+   ],
+   "sfx": [
+    {
+     "time": 31.92,
+     "s": "success",
+     "v": 0.6
+    },
+    {
+     "time": 33.28,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 33.96,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 34.98,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 30.2,
+     "s": "zoom",
+     "v": 0.55
+    }
+   ]
+  },
+  {
+   "id": "melt",
+   "text": "And as the ice melts, *new shipping routes* are opening across the Arctic.",
+   "mode": "globe",
+   "view": {
+    "lon": -20,
+    "lat": 86,
+    "r": 600
+   },
+   "keep": false,
+   "start": 35.45,
+   "end": 39.94,
+   "words": [
+    {
+     "w": "And",
+     "emph": false,
+     "start": 35.45,
+     "end": 35.79
+    },
+    {
+     "w": "as",
+     "emph": false,
+     "start": 35.79,
+     "end": 36.13
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 36.13,
+     "end": 36.47
+    },
+    {
+     "w": "ice",
+     "emph": false,
+     "start": 36.47,
+     "end": 36.81
+    },
+    {
+     "w": "melts,",
+     "emph": false,
+     "start": 36.81,
+     "end": 37.15
+    },
+    {
+     "w": "new",
+     "emph": true,
+     "start": 37.15,
+     "end": 37.49
+    },
+    {
+     "w": "shipping",
+     "emph": true,
+     "start": 37.49,
+     "end": 37.83
+    },
+    {
+     "w": "routes",
+     "emph": true,
+     "start": 37.83,
+     "end": 38.17
+    },
+    {
+     "w": "are",
+     "emph": false,
+     "start": 38.17,
+     "end": 38.51
+    },
+    {
+     "w": "opening",
+     "emph": false,
+     "start": 38.51,
+     "end": 38.85
+    },
+    {
+     "w": "across",
+     "emph": false,
+     "start": 38.85,
+     "end": 39.19
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 39.19,
+     "end": 39.53
+    },
+    {
+     "w": "Arctic.",
+     "emph": false,
+     "start": 39.53,
+     "end": 39.87
+    }
+   ],
+   "events": [
+    {
+     "t": "arc",
+     "at": "new",
+     "pts": [
+      [
+       121.8,
+       31.2
+      ],
+      [
+       129,
+       33.5
+      ],
+      [
+       141,
+       41.5
+      ],
+      [
+       146,
+       44
+      ],
+      [
+       157,
+       51.5
+      ],
+      [
+       164,
+       56
+      ],
+      [
+       180,
+       62.5
+      ],
+      [
+       -170,
+       65.8
+      ],
+      [
+       -170,
+       69
+      ],
+      [
+       -178,
+       70.2
+      ],
+      [
+       170,
+       70.5
+      ],
+      [
+       160,
+       70.8
+      ],
+      [
+       140,
+       73
+      ],
+      [
+       113,
+       77.8
+      ],
+      [
+       104,
+       77.9
+      ],
+      [
+       90,
+       76.5
+      ],
+      [
+       80,
+       73.8
+      ],
+      [
+       70,
+       73
+      ],
+      [
+       60,
+       70.5
+      ],
+      [
+       45,
+       68.8
+      ],
+      [
+       33,
+       70.3
+      ],
+      [
+       25,
+       71.2
+      ],
+      [
+       14,
+       68.8
+      ],
+      [
+       5,
+       62
+      ],
+      [
+       3,
+       57
+      ],
+      [
+       4.4,
+       51.9
+      ]
+     ],
+     "dur": 3.4,
+     "color": "#22d3ee",
+     "time": 37.09,
+     "end": 39.94
+    },
+    {
+     "t": "sticker",
+     "at": "melts",
+     "emoji": "1fae0",
+     "x": 0.2,
+     "y": 0.15,
+     "size": 240,
+     "rot": -8,
+     "time": 36.75,
+     "end": 39.94
+    },
+    {
+     "t": "sticker",
+     "at": "shipping",
+     "emoji": "1f6a2",
+     "x": 0.8,
+     "y": 0.15,
+     "size": 240,
+     "rot": 8,
+     "time": 37.43,
+     "end": 39.94
+    }
+   ],
+   "sfx": [
+    {
+     "time": 36.75,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 37.09,
+     "s": "whoosh1",
+     "v": 0.7
+    },
+    {
+     "time": 37.43,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 35.37,
+     "s": "zoom",
+     "v": 0.55
+    }
+   ]
+  },
+  {
+   "id": "offer",
+   "text": "Back in *nineteen forty-six*, America offered Denmark *one hundred million dollars* in gold for it.",
+   "mode": "map",
+   "view": {
+    "lon": -45,
+    "lat": 52,
+    "span": 125
+   },
+   "keep": false,
+   "start": 39.94,
+   "end": 45.11,
+   "words": [
+    {
+     "w": "Back",
+     "emph": false,
+     "start": 39.94,
+     "end": 40.28
+    },
+    {
+     "w": "in",
+     "emph": false,
+     "start": 40.28,
+     "end": 40.62
+    },
+    {
+     "w": "nineteen",
+     "emph": true,
+     "start": 40.62,
+     "end": 40.96
+    },
+    {
+     "w": "forty-six,",
+     "emph": true,
+     "start": 40.96,
+     "end": 41.3
+    },
+    {
+     "w": "America",
+     "emph": false,
+     "start": 41.3,
+     "end": 41.64
+    },
+    {
+     "w": "offered",
+     "emph": false,
+     "start": 41.64,
+     "end": 41.98
+    },
+    {
+     "w": "Denmark",
+     "emph": false,
+     "start": 41.98,
+     "end": 42.32
+    },
+    {
+     "w": "one",
+     "emph": true,
+     "start": 42.32,
+     "end": 42.66
+    },
+    {
+     "w": "hundred",
+     "emph": true,
+     "start": 42.66,
+     "end": 43.0
+    },
+    {
+     "w": "million",
+     "emph": true,
+     "start": 43.0,
+     "end": 43.34
+    },
+    {
+     "w": "dollars",
+     "emph": true,
+     "start": 43.34,
+     "end": 43.68
+    },
+    {
+     "w": "in",
+     "emph": false,
+     "start": 43.68,
+     "end": 44.02
+    },
+    {
+     "w": "gold",
+     "emph": false,
+     "start": 44.02,
+     "end": 44.36
+    },
+    {
+     "w": "for",
+     "emph": false,
+     "start": 44.36,
+     "end": 44.7
+    },
+    {
+     "w": "it.",
+     "emph": false,
+     "start": 44.7,
+     "end": 45.04
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": "America",
+     "ids": [
+      "United States of America"
+     ],
+     "color": "#3b82f6",
+     "label": "USA",
+     "time": 41.24,
+     "end": 45.11
+    },
+    {
+     "t": "hl",
+     "at": "Denmark",
+     "ids": [
+      "Denmark"
+     ],
+     "color": "#ef4444",
+     "label": "DENMARK",
+     "time": 41.92,
+     "end": 45.11
+    },
+    {
+     "t": "hl",
+     "at": "gold",
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#1e3a8a",
+     "label": "GREENLAND",
+     "time": 43.96,
+     "end": 45.11
+    },
+    {
+     "t": "sticker",
+     "at": "America",
+     "emoji": "1f1fa-1f1f8",
+     "x": 0.2,
+     "y": 0.15,
+     "size": 220,
+     "rot": -8,
+     "time": 41.24,
+     "end": 45.11
+    },
+    {
+     "t": "sticker",
+     "at": "Denmark",
+     "emoji": "1f1e9-1f1f0",
+     "x": 0.8,
+     "y": 0.15,
+     "size": 220,
+     "rot": 8,
+     "time": 41.92,
+     "end": 45.11
+    },
+    {
+     "t": "stat",
+     "at": "hundred",
+     "to": 100000000,
+     "format": "comma",
+     "prefix": "$",
+     "text": "",
+     "sub": "OFFERED IN GOLD",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 118,
+     "rot": -3,
+     "time": 42.6,
+     "end": 45.11
+    },
+    {
+     "t": "sticker",
+     "at": "gold",
+     "emoji": "1f4b0",
+     "x": 0.82,
+     "y": 0.3,
+     "size": 230,
+     "rot": 10,
+     "time": 43.96,
+     "end": 45.11
+    }
+   ],
+   "sfx": [
+    {
+     "time": 40.56,
+     "s": "pop1",
+     "v": 0.7
+    },
+    {
+     "time": 41.24,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 41.92,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 42.6,
+     "s": "reveal",
+     "v": 0.6
+    },
+    {
+     "time": 43.96,
+     "s": "coins",
+     "v": 0.8
+    },
+    {
+     "time": 39.86,
+     "s": "zoom",
+     "v": 0.55
+    }
+   ]
+  },
+  {
+   "id": "no",
+   "text": "Denmark said *no*. And Greenland has governed itself since *two thousand nine*.",
+   "mode": "map",
+   "view": {
+    "lon": -42,
+    "lat": 72,
+    "span": 80
+   },
+   "keep": false,
+   "start": 45.11,
+   "end": 49.26,
+   "words": [
+    {
+     "w": "Denmark",
+     "emph": false,
+     "start": 45.11,
+     "end": 45.45
+    },
+    {
+     "w": "said",
+     "emph": false,
+     "start": 45.45,
+     "end": 45.79
+    },
+    {
+     "w": "no.",
+     "emph": true,
+     "start": 45.79,
+     "end": 46.13
+    },
+    {
+     "w": "And",
+     "emph": false,
+     "start": 46.13,
+     "end": 46.47
+    },
+    {
+     "w": "Greenland",
+     "emph": false,
+     "start": 46.47,
+     "end": 46.81
+    },
+    {
+     "w": "has",
+     "emph": false,
+     "start": 46.81,
+     "end": 47.15
+    },
+    {
+     "w": "governed",
+     "emph": false,
+     "start": 47.15,
+     "end": 47.49
+    },
+    {
+     "w": "itself",
+     "emph": false,
+     "start": 47.49,
+     "end": 47.83
+    },
+    {
+     "w": "since",
+     "emph": false,
+     "start": 47.83,
+     "end": 48.17
+    },
+    {
+     "w": "two",
+     "emph": true,
+     "start": 48.17,
+     "end": 48.51
+    },
+    {
+     "w": "thousand",
+     "emph": true,
+     "start": 48.51,
+     "end": 48.85
+    },
+    {
+     "w": "nine.",
+     "emph": true,
+     "start": 48.85,
+     "end": 49.19
+    }
+   ],
+   "events": [
+    {
+     "t": "stat",
+     "at": "no",
+     "text": "NO.",
+     "sub": "",
+     "dur": 1.3,
+     "x": 0.5,
+     "y": 0.58,
+     "size": 420,
+     "rot": -8,
+     "style": "stamp",
+     "time": 45.73,
+     "end": 47.03
+    },
+    {
+     "t": "shake",
+     "at": "no",
+     "time": 45.73,
+     "end": 49.26
+    },
+    {
+     "t": "hl",
+     "at": "governed",
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#1e3a8a",
+     "label": "SELF-GOVERNED",
+     "time": 47.09,
+     "end": 49.26
+    },
+    {
+     "t": "sticker",
+     "at": "governed",
+     "emoji": "1f1ec-1f1f1",
+     "x": 0.8,
+     "y": 0.16,
+     "size": 230,
+     "rot": 8,
+     "time": 47.09,
+     "end": 49.26
+    },
+    {
+     "t": "stat",
+     "at": "two",
+     "text": "2009",
+     "sub": "SELF-GOVERNMENT",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 220,
+     "rot": 3,
+     "time": 48.11,
+     "end": 49.26
+    }
+   ],
+   "sfx": [
+    {
+     "time": 45.73,
+     "s": "bigimpact",
+     "v": 0.9
+    },
+    {
+     "time": 47.09,
+     "s": "pop2",
+     "v": 0.8
+    },
+    {
+     "time": 48.11,
+     "s": "reveal",
+     "v": 0.6
+    },
+    {
+     "time": 45.03,
+     "s": "whoosh2",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "notforsale",
+   "text": "Today, Greenland's leaders keep saying the same thing: *we are not for sale*.",
+   "mode": "map",
+   "view": {
+    "lon": -42,
+    "lat": 70,
+    "span": 58
+   },
+   "keep": false,
+   "start": 49.26,
+   "end": 53.75,
+   "words": [
+    {
+     "w": "Today,",
+     "emph": false,
+     "start": 49.26,
+     "end": 49.6
+    },
+    {
+     "w": "Greenland's",
+     "emph": false,
+     "start": 49.6,
+     "end": 49.94
+    },
+    {
+     "w": "leaders",
+     "emph": false,
+     "start": 49.94,
+     "end": 50.28
+    },
+    {
+     "w": "keep",
+     "emph": false,
+     "start": 50.28,
+     "end": 50.62
+    },
+    {
+     "w": "saying",
+     "emph": false,
+     "start": 50.62,
+     "end": 50.96
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 50.96,
+     "end": 51.3
+    },
+    {
+     "w": "same",
+     "emph": false,
+     "start": 51.3,
+     "end": 51.64
+    },
+    {
+     "w": "thing:",
+     "emph": false,
+     "start": 51.64,
+     "end": 51.98
+    },
+    {
+     "w": "we",
+     "emph": true,
+     "start": 51.98,
+     "end": 52.32
+    },
+    {
+     "w": "are",
+     "emph": true,
+     "start": 52.32,
+     "end": 52.66
+    },
+    {
+     "w": "not",
+     "emph": true,
+     "start": 52.66,
+     "end": 53.0
+    },
+    {
+     "w": "for",
+     "emph": true,
+     "start": 53.0,
+     "end": 53.34
+    },
+    {
+     "w": "sale.",
+     "emph": true,
+     "start": 53.34,
+     "end": 53.68
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": 0,
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#1e3a8a",
+     "time": 49.26,
+     "end": 53.75
+    },
+    {
+     "t": "sticker",
+     "at": "greenlands",
+     "emoji": "1f1ec-1f1f1",
+     "x": 0.2,
+     "y": 0.16,
+     "size": 230,
+     "rot": -8,
+     "time": 49.54,
+     "end": 53.75
+    },
+    {
+     "t": "stat",
+     "at": "we",
+     "text": "NOT FOR\nSALE",
+     "sub": "",
+     "x": 0.5,
+     "y": 0.58,
+     "size": 190,
+     "rot": -7,
+     "style": "stamp",
+     "time": 51.92,
+     "end": 53.75
+    },
+    {
+     "t": "shake",
+     "at": "we",
+     "time": 51.92,
+     "end": 53.75
+    }
+   ],
+   "sfx": [
+    {
+     "time": 49.54,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 51.92,
+     "s": "bigimpact",
+     "v": 0.9
+    },
+    {
+     "time": 49.18,
+     "s": "whoosh3",
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "text": "So who really controls the *Arctic*? *Follow* for more maps that explain the world.",
+   "mode": "globe",
+   "view": {
+    "lon": -40,
+    "lat": 80,
+    "r": 500
+   },
+   "keep": false,
+   "start": 53.75,
+   "end": 58.58,
+   "words": [
+    {
+     "w": "So",
+     "emph": false,
+     "start": 53.75,
+     "end": 54.09
+    },
+    {
+     "w": "who",
+     "emph": false,
+     "start": 54.09,
+     "end": 54.43
+    },
+    {
+     "w": "really",
+     "emph": false,
+     "start": 54.43,
+     "end": 54.77
+    },
+    {
+     "w": "controls",
+     "emph": false,
+     "start": 54.77,
+     "end": 55.11
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 55.11,
+     "end": 55.45
+    },
+    {
+     "w": "Arctic?",
+     "emph": true,
+     "start": 55.45,
+     "end": 55.79
+    },
+    {
+     "w": "Follow",
+     "emph": true,
+     "start": 55.79,
+     "end": 56.13
+    },
+    {
+     "w": "for",
+     "emph": false,
+     "start": 56.13,
+     "end": 56.47
+    },
+    {
+     "w": "more",
+     "emph": false,
+     "start": 56.47,
+     "end": 56.81
+    },
+    {
+     "w": "maps",
+     "emph": false,
+     "start": 56.81,
+     "end": 57.15
+    },
+    {
+     "w": "that",
+     "emph": false,
+     "start": 57.15,
+     "end": 57.49
+    },
+    {
+     "w": "explain",
+     "emph": false,
+     "start": 57.49,
+     "end": 57.83
+    },
+    {
+     "w": "the",
+     "emph": false,
+     "start": 57.83,
+     "end": 58.17
+    },
+    {
+     "w": "world.",
+     "emph": false,
+     "start": 58.17,
+     "end": 58.51
+    }
+   ],
+   "events": [
+    {
+     "t": "hl",
+     "at": 0,
+     "ids": [
+      "Greenland"
+     ],
+     "color": "#facc15",
+     "time": 53.75,
+     "end": 58.58
+    },
+    {
+     "t": "sticker",
+     "at": "Arctic",
+     "emoji": "1f9ed",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 240,
+     "rot": 0,
+     "time": 55.39,
+     "end": 58.58
+    },
+    {
+     "t": "stat",
+     "at": "Follow",
+     "text": "FOLLOW FOR MORE",
+     "sub": "",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 76,
+     "rot": 0,
+     "style": "pill",
+     "time": 55.73,
+     "end": 58.58
+    }
+   ],
+   "sfx": [
+    {
+     "time": 55.39,
+     "s": "pop1",
+     "v": 0.8
+    },
+    {
+     "time": 55.73,
+     "s": "success",
+     "v": 0.7
+    },
+    {
+     "time": 53.67,
+     "s": "zoom",
+     "v": 0.55
+    },
+    {
+     "time": 58.53,
+     "s": "reveal",
+     "v": 0.5
+    }
+   ]
+  }
+ ]
+}
